@@ -19,7 +19,7 @@ server.get('/api/cohorts', async (req, res) => {
     }
   });
 
-  // list a role by id
+  // list a cohort by id
 server.get('/api/cohorts/:id', async (req, res) => {
     // get the cohorts from the database
     try {
@@ -87,7 +87,7 @@ server.get('/api/cohorts/:id', async (req, res) => {
 
 
 
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 3001;
 server.listen(port, () => 
     console.log(`\n** API running pon http://localhost:${port} **\n`)
 );
